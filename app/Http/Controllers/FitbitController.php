@@ -33,13 +33,13 @@ class FitbitController extends Controller
          Cache::forever('accessToken', $profile['access_token']);
 
         $this->fitbit->getRefreshToken();
-/*
+
         echo "<pre>";
         print_r($profile);
-        exit;*/
+        exit;
 
-        Session::flash('Data save successfully','success');
-        return redirect('success');
+
+        //return redirect('success');
 
     }
 
